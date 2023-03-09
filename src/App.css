@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* *! NAVBAR */
+.header-nawbar {
+  border-bottom: 2px solid #a9508b;
+  background-color: #35424a;
+  color: white;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: white;
+  margin-left: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a:hover {
+  color: #a9508b;
+}
+.header-left {
+  font-size: 1.3rem;
+}
+#h1-span {
+  color: #a9508b;
+}
+/**! FOOTER */
+.footer-bottom {
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  height: 7.5rem;
+  background-color: #35424a;
+}
+.footer-bottom > img {
+  margin: 5px;
+  width: 12rem;
+}
+
+/**! HOME */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/showcase.jpg);
+  height: 28rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.h1-main {
   color: white;
+  text-align: center;
+}
+.h1-main > h1 {
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  background-color: #35424a;
+  color: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.section-left {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+#email {
+  padding: 0.5rem;
+  width: 16rem;
+}
+#submit {
+  background-color: #e84a1d;
+  padding: 0.6rem;
+  color: white;
+  border: none;
+  width: 8rem;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15rem;
+}
+.footer-top > div {
+  width: 30rem;
+  text-align: center;
+}
+#footer-img {
+  width: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/**! ABOUT */
+
+.aboutmain {
+  display: flex;
+  height: 42rem;
+  justify-content: space-evenly;
+  line-height: 1.5;
+}
+
+.about-us {
+  width: 60%;
+  height: 10rem;
+  margin-top: 2rem;
+}
+#p2 {
+  background-color: #35424a;
+  color: white;
+  padding: 0.5rem;
+}
+.we-do {
+  color: white;
+  width: 30%;
+  height: 10rem;
+  margin-top: 2rem;
+  background-color: #35424a;
+  padding: 20px 10px;
+}
+
+/**! SERVİCES  */
+
+.servicesmain {
+  display: flex;
+  height: 42rem;
+  justify-content: space-evenly;
+  line-height: 1.5;
+}
+.services {
+  width: 60%;
+  height: 10rem;
+  margin-top: 1rem;
+}
+.services > div {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #e6e6e6;
+}
+.get-quote {
+  color: white;
+  width: 30rem;
+  height: 15rem;
+  margin-top: 2rem;
+  background-color: #35424a;
+  padding: 20px 10px;
+}
+
+.get-quote > form > button {
+  background-color: #e84a1d;
+  padding: 0.6rem;
+  color: white;
+  border: none;
+  width: 5rem;
+}
+.get-quote > form > input {
+  width: 28rem;
+  padding: 5px 0;
+}
+
+.cardStyle {
+  display: flex;
+  flex-direction: column;
+  height: 73vh;
+  justify-content: center;
+  align-items: center;
+}
+.cardStyle > img {
+  width: 10rem;
+  margin: 1rem;
+}
+.cardStyle > p {
+  width: 50rem;
 }
